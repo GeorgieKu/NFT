@@ -1,0 +1,19 @@
+- var menuValues = ['Главная', 'Что даст обучение']
+- var menuLinks = ['./index.html', './education.html']
+header.header
+    .container.header__container
+        button.header__burger-btn.btn-reset#burger(aria-label="burger-menu")
+            span
+            span
+        a.logo(href="#")
+            picture
+                source(media='(min-width: 577px)' srcset="./img/logo.webp")
+                source(media='(max-width: 576px)' srcset="./img/logo-576.webp")
+                img.logo__img(src="./img/logo.png", alt="logo")
+        .header__block 
+            nav.menu 
+                ul.menu__list.list-reset
+                    each value, index in menuValues
+                        li.menu__item 
+                            a.menu__link(href=menuLinks[index]) #{value}
+            button.header__btn.btn-reset Личный кабинет

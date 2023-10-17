@@ -1,0 +1,11 @@
+.modal#my-modal
+    .modal__box
+        button.modal__close-btn.btn-reset#close-my-modal-btn
+            svg(viewBox="0 0 22.5 22.5" width="22.5" height="22.5")
+                use(xlink:href="./svg/sprite.svg#close")
+        .modal__block
+            h2.modal__title Начни прямо сейчас!
+            p.modal__text Получи все нужные навыки для заработка на NFT всего за 28 дней!
+            form.modal__form(action="#")
+                input.modal__input(type="email", name="email", placeholder="Ваш email") 
+                button.modal__btn.green-btn.btn-reset(type="submit") Оплатить

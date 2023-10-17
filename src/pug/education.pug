@@ -1,0 +1,11 @@
+extends base
+block content
+    main 
+        section.education 
+            .container.education__container 
+                h1.education__title Что даст тебе обучение? 
+                .education__grid 
+                    each image, index in cardImages
+                        .education__card 
+                            img.education__img(src=image, alt='smile') 
+                            p.education__text #{cardTexts[index]}
